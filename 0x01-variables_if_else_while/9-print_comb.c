@@ -6,10 +6,18 @@
 */
 int main(void)
 {
-	int i;
+	int n;
 
-	for (i = 0; i < 10; i++)
-		printf("%d, ", i);
+	for (n = 48; n < 58; n++)
+	{
+		putchar(n);
+		if (n != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
 	putchar('\n');
 	return (0);
+
 }
