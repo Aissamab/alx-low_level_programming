@@ -3,9 +3,9 @@
 /**
  * main- Entry point
  *
- * Description: printd the alphabets in lowercase 
+ * Description: prints the alphabets in lowercase
  *
- * Return: Always 0 
+ * Return: Always 0
 */
 void print_alphabet(void);
 {
