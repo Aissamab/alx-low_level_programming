@@ -3,7 +3,7 @@
 
 /**
  * _strlen - returns the length of a string
- * @s: string to get the length
+ * @p: string to evaluate
  *
  * Return: the length of the string
  */
@@ -26,13 +26,20 @@ int _strlen(char *p)
  * @dest: pointer to the buffer in which we copy the string
  * @src: string to be copied
  *
- * Return: @dest
+ * Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
-	int i;
+	int len, i;
 
-	for (i = 0; src[i]; i++)
+	len = 0;
+
+	while (src[len] != '\0')
+	{
+		len++;
+	}
+
+	for (i = 0; i < len; i++)
 	{
 		dest[i] = src[i];
 	}
@@ -80,4 +87,3 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	return (dog);
 }
-
